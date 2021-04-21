@@ -335,7 +335,7 @@ def bot_run():
                 time.sleep(1)
                 
                 
-                "BCH_clickbot" = response.url.split("/")[-1].split("?")[0]
+                BCH_clickbot = response.url.split("/")[-1].split("?")[0]
                 logging.info("Connecting with bot: {}".format("BCH_clickbot"))
             
                 try:
