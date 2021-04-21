@@ -27,7 +27,7 @@ start_time = time.time()
 
 API_ID = "717425"
 API_HASH = "322526d2c3350b1d3530de327cf08c07"
-"BCH_clickbot" = None
+BCH_clickbot = None
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0',
@@ -259,7 +259,7 @@ def bot_run():
             client.send_message(receiver,"/bots")
             logging.info("Texting Bot")
             
-            "BCH_clickbot" = None
+            BCH_clickbot = None
 
             while True:
                 #main_tab = driver.current_window_handle
@@ -608,7 +608,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     phone = args.phone
-    "BCH_clickbot" = args.bot
+    BCH_clickbot = args.bot
     
     initial()
     
